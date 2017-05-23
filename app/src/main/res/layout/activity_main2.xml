@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fernandoalfaro.holamundo.Main2Activity">
+
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Introduzca el numero" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_menu_call"
+        android:layout_alignBottom="@+id/editTextPhone"
+        android:layout_toEndOf="@+id/editTextPhone"
+        android:layout_toRightOf="@+id/editTextPhone"
+        app:srcCompat="@drawable/selector_button_lollipop" />
+
+    <EditText
+        android:hint="Visita la web"
+        android:id="@+id/editTextWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextPhone"
+        android:layout_alignStart="@+id/editTextPhone"
+        android:layout_below="@+id/editTextPhone"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <ImageButton
+        android:id="@+id/imageButtonWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/selector_button_lollipop"
+        android:background="@android:drawable/ic_menu_view"
+        android:layout_alignBottom="@+id/editTextWeb"
+        android:layout_toRightOf="@+id/editTextWeb"
+        android:layout_toEndOf="@+id/editTextWeb" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCamara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:src="@android:drawable/ic_menu_camera"/>
+
+
+</RelativeLayout>
